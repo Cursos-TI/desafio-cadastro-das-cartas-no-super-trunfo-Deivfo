@@ -62,7 +62,7 @@ int main() {
    
      printf("\n"); // Pequeno espaço entre uma carta e outra.
 
-    printf("Comece entrando com os dados da Carta 2: \n");    
+    printf("Entre com os dados da Carta 2: \n");    
       
     printf("Digite o Codigo do estado: \n"); 
     scanf(" %c", &estado2); 
@@ -103,7 +103,7 @@ int main() {
     printf("PIB per capita: %.2f \n", PIBpercapita); //Adição de impressão de PIB per capita da carta 1.
     printf("Numero de pontos turisticos: %i \n", ptsturisticos); 
 
-    printf("\n"); // Pequeno espaço entre uma carta e outra.
+    printf("\n"); 
 
     //EXIBIÇAO DADOS CARTA 2    
     printf("Carta 2: \n");   
@@ -116,6 +116,41 @@ int main() {
     printf("PIB: %.2f \n", PIB2); 
     printf("PIB per capita: %.2f \n", PIBpercapita2); //Adição de impressão de PIB per capita da carta 2.
     printf("Numero de pontos turisticos: %i \n", ptsturisticos2); 
+
+    printf("\n"); 
+
+    //COMPARAÇAO DOS SUPER PODERES
+    int resultadocarta1 = 0;
+    int resultadocarta2 = 0;
+
+    //Comparando as cartas para cada propriedade e somando o "super poder"
+    if (populacao > populacao2) resultadocarta1++;
+    else if (populacao < populacao2) resultadocarta2++;
+
+    if (densidedepopulacional > densidedepopulacional2) resultadocarta1++;
+    else if (densidedepopulacional < densidedepopulacional2) resultadocarta2++;
+
+    if (area > area2) resultadocarta1++;
+    else if (area < area2) resultadocarta2++;
+
+    if (PIB > PIB2) resultadocarta1++;
+    else if (PIB < PIB2) resultadocarta2++;
+
+    if (PIBpercapita > PIBpercapita2) resultadocarta1++;
+    else if (PIBpercapita < PIBpercapita2) resultadocarta2++;
+
+    if (ptsturisticos > ptsturisticos2) resultadocarta1++;
+    else if (ptsturisticos < ptsturisticos2) resultadocarta2++;
+
+    //Exibição da carta ganhadora
+    printf("\n Resultado Final:\n");
+    if(resultadocarta1 > resultadocarta2){
+        printf("Carta 1 Venceu com %d pontos! \n", resultadocarta1);
+    } else if (resultadocarta2 > resultadocarta1) {
+        printf("Carta 2 venceu com %d pontos! \n", resultadocarta2);
+    } else{
+        printf("Empate entre as cartas! \n");
+    }
 
     return 0;
 
