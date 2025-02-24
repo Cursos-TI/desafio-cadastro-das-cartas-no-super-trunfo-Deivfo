@@ -133,43 +133,8 @@ int main() {
     else {
         printf("Resultado: Carta 2 %s (%s) venceu! \n", nomecidade2,codcarta2);}
 
-
-    // Comparação por atributos área
     printf("----------------------------------------------------\n"); 
-    printf("Comparação de cartas: (Atributo: Área): \n");
-   
-    printf("\n");
-    printf("Carta 1 - %s (%s): %f \n",nomecidade,codcarta,area);
-    printf("Carta 2 - %s (%s): %f \n",nomecidade2,codcarta2,area2);
-    if (area>area2){
-        printf("Resultado: Carta 1 %s (%s) venceu! \n", nomecidade,codcarta);}
-    else {
-        printf("Resultado: Carta 2 %s (%s) venceu! \n", nomecidade2,codcarta2);}
 
-
-    // Comparação por atributos PIB
-    printf("----------------------------------------------------\n"); 
-    printf("Comparação de cartas: (Atributo: PIB): \n");
-   
-    printf("\n");
-    printf("Carta 1 - %s (%s): %f \n",nomecidade,codcarta,PIB);
-    printf("Carta 2 - %s (%s): %f \n",nomecidade2,codcarta2,PIB2);
-    if (PIB>PIB2){
-        printf("Resultado: Carta 1 %s (%s) venceu! \n", nomecidade,codcarta);}
-    else {
-        printf("Resultado: Carta 2 %s (%s) venceu! \n", nomecidade2,codcarta2);}
-
-    // Comparação por atributos PIB per capita
-    printf("----------------------------------------------------\n"); 
-    printf("Comparação de cartas: (Atributo: PIB per capita): \n");
-   
-    printf("\n");
-    printf("Carta 1 - %s (%s): %f \n",nomecidade,codcarta,PIBpercapita);
-    printf("Carta 2 - %s (%s): %f \n",nomecidade2,codcarta2,PIBpercapita2);
-    if (PIBpercapita>PIBpercapita2){
-        printf("Resultado: Carta 1 %s (%s) venceu! \n", nomecidade,codcarta);}
-    else {
-        printf("Resultado: Carta 2 %s (%s) venceu! \n", nomecidade2,codcarta2);}
 
         return 0;
     }
