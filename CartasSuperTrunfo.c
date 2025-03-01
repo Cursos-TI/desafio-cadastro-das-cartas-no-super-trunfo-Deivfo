@@ -37,7 +37,7 @@ int main() {
     scanf("%3s", codcarta); 
 
     printf("Digite o nome da cidade: \n");
-    scanf(" %[^\n]s", nomecidade);
+    scanf(" %[^\n]s", nomecidade); //Adicionada regra no especificador para aceitar caracteres
 
     printf("Digite o numero populacional: \n");
     scanf("%i", &populacao);
@@ -91,7 +91,7 @@ int main() {
     float superpoder = populacao + area + (1.0 / densidedepopulacional) + PIB + PIBpercapita + ptsturisticos;
     float superpoder2 = populacao2 + area2 + (1.0 / densidedepopulacional2) + PIB2 + PIBpercapita2 + ptsturisticos2;
 
-    // EXIBIÇÃO DOS DADOS 
+    // EXIBIÇÃO DOS DADOS DA CARTA 1
     printf("------Carta 1------ \n");    
     printf("Estado: %c \n", estado); 
     printf("Codigo da carta: %s \n", codcarta); 
@@ -106,6 +106,7 @@ int main() {
 
     printf("\n");
 
+    // EXIBIÇÃO DOS DADOS DA CARTA 2
     printf("------Carta 2------ \n");   
     printf("Estado: %c \n", estado2); 
     printf("Codigo da carta: %s \n", codcarta2); 
@@ -139,4 +140,3 @@ int main() {
     
     return 0;
 }
-
