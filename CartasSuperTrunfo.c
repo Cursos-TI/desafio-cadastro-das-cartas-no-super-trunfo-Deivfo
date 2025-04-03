@@ -37,7 +37,7 @@ int main() {
     scanf("%3s", codcarta); 
 
     printf("Digite o nome da cidade: \n");
-    scanf(" %[^\n]s", nomecidade); //Adicionada regra no especificador para aceitar caracteres
+    scanf(" %[^\n]s", nomecidade); //Adicionada regra no especificador para aceitar caracteres especiais e espaços.
 
     printf("Digite o numero populacional: \n");
     scanf("%i", &populacao);
@@ -45,12 +45,12 @@ int main() {
     printf("Digite a area: \n");
     scanf("%f", &area);
 
-    densidedepopulacional = populacao / area; // CÁLCULO DE DENSIDADE POPULACIONAL DA CARTA 1
+    densidedepopulacional = populacao / area; // ADIÇÃO DE VARIÁVEL E CÁLCULO AUTOMÁTICO DO ATRIBUTO: DENSIDADE POPULACIONAL DA CARTA 1
 
     printf("Digite o PIB: \n");
     scanf("%f", &PIB);
 
-    PIBpercapita = PIB / populacao; // CÁLCULO DE PIB PER CAPITA DA CARTA 1
+    PIBpercapita = PIB / populacao; // ADIÇÃO DE VARIÁVEL E CÁLCULO AUTOMÁTIDO DO ATRIBUTO: PIB PER CAPITA DA CARTA 1
 
     printf("Digite o numero de pontos turisticos: \n");
     scanf("%i", &ptsturisticos);
@@ -75,23 +75,23 @@ int main() {
     printf("Digite a area: \n");
     scanf("%f", &area2);
 
-    densidedepopulacional2 = populacao2 / area2; // CÁLCULO DE DENSIDADE POPULACIONAL DA CARTA 2
+    densidedepopulacional2 = populacao2 / area2; // ADIÇÃO DE VARIÁVEL E CÁLCULO AUTOMÁTICO DO ATRIBUTO: DENSIDADE POPULACIONAL DA CARTA 2
   
     printf("Digite o PIB: \n");
     scanf("%f", &PIB2);
 
-    PIBpercapita2 = PIB2 / populacao2; // CÁLCULO DE PIB PER CAPITA DA CARTA 2
+    PIBpercapita2 = PIB2 / populacao2; // // ADIÇÃO DE VARIÁVEL E CÁLCULO AUTOMÁTIDO DO ATRIBUTO: PIB PER CAPITA DA CARTA 2
   
     printf("Digite o numero de pontos turisticos: \n");
     scanf("%i", &ptsturisticos2);
 
     printf("\n");
 
-    //Adição de variavel de super poder
+    //ADIÇÃO DE VARIÁVEL DE SUPER PODER DAS CARTAS 1 E 2
     float superpoder = populacao + area + (1.0 / densidedepopulacional) + PIB + PIBpercapita + ptsturisticos;
     float superpoder2 = populacao2 + area2 + (1.0 / densidedepopulacional2) + PIB2 + PIBpercapita2 + ptsturisticos2;
 
-    // EXIBIÇÃO DOS DADOS DA CARTA 1
+    // EXIBIÇÃO DOS DADOS CADASTRADOS DA CARTA 1
     printf("------Carta 1------ \n");    
     printf("Estado: %c \n", estado); 
     printf("Codigo da carta: %s \n", codcarta); 
@@ -106,7 +106,7 @@ int main() {
 
     printf("\n");
 
-    // EXIBIÇÃO DOS DADOS DA CARTA 2
+    // XIBIÇÃO DOS DADOS CADASTRADOS DA CARTA 2
     printf("------Carta 2------ \n");   
     printf("Estado: %c \n", estado2); 
     printf("Codigo da carta: %s \n", codcarta2); 
@@ -121,7 +121,7 @@ int main() {
 
     printf("\n");
 
-    // Resultado por atributo... 1 para carta1 e 0 para carta2
+    // RESULTADO POR ATRIBUTO... 1 PARA CARTA1 E 0 PARA CARTA2
     printf("------Resultado por atributo------ \n");
     printf("População: (%d) \n", populacao > populacao2);
     printf("Área: (%d) \n", area > area2);
